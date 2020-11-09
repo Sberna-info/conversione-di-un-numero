@@ -16,7 +16,7 @@ namespace conversione_di_un_numero
             base2 = int.Parse(Console.ReadLine());
             Console.Write("inserisci in numero da convertire:");
             numero = int.Parse(Console.ReadLine());
-            string risultato = Convert.ToString(numero, base2);
+            string risultato = Convert.ToString(numero, base2).PadLeft(16,'o');
             Console.WriteLine($"il numero convertito è {risultato}");
         }
     }
